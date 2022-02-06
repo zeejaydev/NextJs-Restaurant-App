@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@300;400;500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url("https://use.typekit.net/vno3ywr.css");
+/* font-family: hoss-round, sans-serif;
+font-weight: 600;
+font-style: normal; */
+.bg {
+    background-image: linear-gradient(rgba(45, 45, 45, 0.4), rgba(45, 45, 45, 0.4)), url("/menu.png");
+    /* background-size: cover; */
+    min-height: 30vh;
+    background-position-y: -5em;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .nav{
+    display: inline;
+  }
+  .logo{
+    position: relative;
+    font-family: hoss-round, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .links{
+    font-family: hoss-round, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 50px;
+  }
+  .title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    line-height: 90px;
+    justify-content: center;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+  }
+  .container{
+    max-width: 1024px;
+    margin: 0px auto 10px auto;
+    min-height: 50vh;
+    padding: 25px;
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  .menuTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #484848;
+    padding: 15px 0px;
+  }
+  .foodTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #484848;  
+  }
+  .foodDes{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    color: #797979; 
+  }
+  .foodPrice{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: #2e2e2e;
+    padding: 8px; 
+  }
+  .footer{
+    min-height: 40vh;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .container{
+        padding: 10px;
+        margin: 0 auto 10px auto;
+      }
+  } 

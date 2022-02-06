@@ -1,0 +1,16 @@
+.bg{
+    background-image: linear-gradient(rgba(45,45,45,0.5),rgba(45,45,45,0.5)), url('../public/restaurant.jpg');
+    min-height: 30vh;
+    background-position-y: -30em;
+    background-position-x: center;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    line-height: 90px;
+    justify-content: center;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+  }

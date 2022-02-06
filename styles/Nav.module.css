@@ -1,0 +1,45 @@
+.logo{
+    position: relative;
+    font-family: hoss-round, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .mobileLogo{
+    position: relative;
+    font-family: hoss-round, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+  }
+  .close{
+    position: relative;
+    font-size: 30px;
+    color: #484848;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+  .links{
+    font-family: hoss-round, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 50px;
+  }
+  .mlinks{
+    font-family: hoss-round, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: #484848;
+    padding: 8px 0;
+    border-bottom: 1px black solid;
+  }
+  

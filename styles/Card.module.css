@@ -1,0 +1,15 @@
+.card{
+    background-color: white;
+    min-width: 250px;
+    min-height: 220px;
+    max-height: 220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top:-220px;
+    right: 0px;
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px 8px;
+
+
+}

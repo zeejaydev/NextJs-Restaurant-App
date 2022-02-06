@@ -1,0 +1,49 @@
+.bg{
+    background-image: linear-gradient(rgba(45,45,45,0.5),rgba(45,45,45,0.5)), url('../public/restaurant.jpg');
+    min-height: 30vh;
+    background-position-y: -30em;
+    background-position-x: center;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    line-height: 90px;
+    justify-content: center;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+  }
+  .subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+.foodTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #484848;  
+  }
+  .buttonTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 6px 0;
+    color: #fff;
+    text-align: center; 
+  }
+  .foodDes{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    color: #797979;
+    padding: 10px 0; 
+  }
+  .foodPrice{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    color: #2e2e2e;
+    padding: 10px 0;
+  }
