@@ -1,5 +1,5 @@
 ## Restauran Web App
-[LIVE DEMO](https://vercel.com/zeejaydev/next-js-restaurant-app/dScjCEZozig4dAdiwWV3uTdhnghT) 
+[LIVE DEMO](https://next-js-restaurant-app-beta.vercel.app) 
 
 <p float="left">
     <img src="./githubpics/home.png" width="185" height="277">
