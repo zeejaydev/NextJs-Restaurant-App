@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import styles from '../../../styles/OrderPage.module.css'
-import Nav from '../../components/navBar'
-import Footer from '../../components/footer'
+import Nav from '../../../components/navBar'
+import Footer from '../../../components/footer'
 import hummus from '../../../public/hummusPlate.png'
 import baba from '../../../public/baba.png'
 import fattoush from '../../../public/fattoush.png'
@@ -21,8 +21,8 @@ import tikkaSand from '../../../public/tikka.png'
 import burgerSand from '../../../public/burger.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import FloatingButton from '../../components/floatingButton'
-import BreadCrumbs from '../../components/breadcrumbs'
+import FloatingButton from '../../../components/floatingButton'
+import BreadCrumbs from '../../../components/breadcrumbs'
 
 const data = [
     {

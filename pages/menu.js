@@ -3,9 +3,9 @@ import Image from 'next/image'
 import hummus from '../public/hummus.png'
 import kabobo from '../public/plate.png'
 import falafel from '../public/falafel.png'
-import Nav from './components/navBar'
-import Footer from './components/footer'
-import FloatingButton from './components/floatingButton'
+import Nav from '../components/navBar'
+import Footer from '../components/footer'
+import FloatingButton from '../components/floatingButton'
 export default function Menu(){
     const data = [
         {

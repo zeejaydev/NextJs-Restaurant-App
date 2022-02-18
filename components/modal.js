@@ -1,4 +1,4 @@
-import { CardElement,useStripe,useElements } from '@stripe/react-stripe-js';
+import { CardElement,useStripe,useElements,Elements } from '@stripe/react-stripe-js';
 import {useEffect, useState} from 'react';
 
 
@@ -10,7 +10,6 @@ export default function Modal ({show,hide,total}){
     const [processing, setProcessing] = useState('');
     const [disabled, setDisabled] = useState(false);
     const [clientSecret, setClientSecret] = useState('');
-
     
 
     useEffect(() => {
@@ -41,7 +40,7 @@ export default function Modal ({show,hide,total}){
      const handleSubmit = async ev => {
         ev.preventDefault();
         setProcessing(true);
-
+        
         const payload = await stripe.confirmCardPayment(clientSecret, {
         payment_method: {
             card: elements.getElement(CardElement)
@@ -84,7 +83,7 @@ export default function Modal ({show,hide,total}){
                                 </button>
                                 </div>
                                 {/*body*/}
-
+                                
                                 <form className="relative p-6 " onSubmit={handleSubmit}>
                                     <div className="flex gap-3">
                                         <input type="text" className="border w-full rounded rounded-md p-2 my-2" id="name" placeholder="First Name"/>
@@ -100,7 +99,9 @@ export default function Modal ({show,hide,total}){
                                        </div> */}
                                        <div className='p-2 my-2 border rounded rounded-md'>
                                        
-                                       <CardElement onChange={handleChange} />
+                                            <CardElement onChange={handleChange} />
+                                      
+                                      
 
                                       
                                        
@@ -139,7 +140,7 @@ export default function Modal ({show,hide,total}){
                                         Payment succeeded
                                     </p>
                                 </form>
-                                
+                               
                                 {/*footer*/}
                                 <div className="flex items-center justify-end p-2 border-t border-solid border-blueGray-200 rounded-b">
                                 <button

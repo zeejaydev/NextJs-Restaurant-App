@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import {FaBars,FaTimes} from 'react-icons/fa'
-import styles from '../../styles/Nav.module.css'
+import styles from '../styles/Nav.module.css'
 
 export default function Nav(){
     const [show , setShow] = useState(false)

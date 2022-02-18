@@ -7,9 +7,9 @@ import falafel from '../public/falafel.jpg'
 import shawarma from '../public/shawarma.jpg'
 import about from '../public/about.jpg'
 import Link from 'next/link'
-import Nav from './components/navBar'
-import Footer from './components/footer'
-import FloatingButton from './components/floatingButton'
+import Nav from '../components/navBar'
+import Footer from '../components/footer'
+import FloatingButton from '../components/floatingButton'
 export default function Home() {
   const featuerd = [
     {

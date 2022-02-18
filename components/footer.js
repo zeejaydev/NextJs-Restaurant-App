@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import styles from '../../styles/Footer.module.css'
-import grub from '../../public/grub.png'
-import uber from '../../public/uber.svg'
-import doordash from '../../public/doordash.png'
+import styles from '../styles/Footer.module.css'
+import grub from '../public/grub.png'
+import uber from '../public/uber.svg'
+import doordash from '../public/doordash.png'
 import {FaFacebookF,FaInstagram} from 'react-icons/fa'
 
 export default function Footer(){

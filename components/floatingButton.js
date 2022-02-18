@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import {FaAngleDown, FaShoppingBag } from 'react-icons/fa'
 import { useSelector } from 'react-redux'
-import { hide, show} from '../../redux/bagSlice'
+import { hide, show} from '../redux/bagSlice'
 import { useDispatch } from 'react-redux'
-import styles from '../../styles/Card.module.css'
+import styles from '../styles/Card.module.css'
 import { useRouter } from 'next/router'
 
 

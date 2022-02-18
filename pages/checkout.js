@@ -1,27 +1,26 @@
-import Nav from "./components/navBar";
+import Nav from "../components/navBar";
 import styles from '../styles/OrderPage.module.css'
 import { useSelector } from 'react-redux'
 import Image from "next/image";
-import Footer from "./components/footer";
+import Footer from "../components/footer";
 import { useDispatch } from 'react-redux'
 import { decrement   } from '../redux/bagSlice'
 import emptybag from '../public/empty-bag.png'
 import Link from "next/link";
-import Modal from "./components/modal";
+import Modal from "../components/modal";
 import { useState , useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from '@stripe/react-stripe-js';
 
+
+ const stripePromise = loadStripe("pk_test_pLjuIrW2QxFzfBfXrtBZmHil00SnxKJpbM");
+ 
 export default function Checkout (){
     const bag = useSelector(state => state.bag)
     const dispatch = useDispatch()
     const [showModal, setShowModal] = useState(false)
     // const [clientSecret, setClientSecret] = useState("");
-
-    const stripePromise = loadStripe(
-        "pk_test_pLjuIrW2QxFzfBfXrtBZmHil00SnxKJpbM"
-      );
-
+   
     const hide = ()=>{
         setShowModal(false)
     }

@@ -1,7 +1,7 @@
 import styles from '../styles/Location.module.css';
-import Footer from './components/footer';
-import Nav from './components/navBar'
-import FloatingButton from './components/floatingButton'
+import Footer from '../components/footer';
+import Nav from '../components/navBar'
+import FloatingButton from '../components/floatingButton'
 
 export default function Location (){
     return(

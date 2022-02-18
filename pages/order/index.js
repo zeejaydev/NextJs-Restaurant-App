@@ -3,12 +3,12 @@ import hummus from '../../public/mezza.jpeg'
 import kabobo from '../../public/main.jpeg'
 import falafel from '../../public/sand.jpeg'
 import sweets from '../../public/sweets.jpeg'
-import Nav from '../components/navBar'
+import Nav from '../../components/navBar'
 import Image from 'next/image'
 import Link from 'next/link'
-import FloatingButton from '../components/floatingButton'
-import Footer from '../components/footer'
-import BreadCrumbs from '../components/breadcrumbs'
+import FloatingButton from '../../components/floatingButton'
+import Footer from '../../components/footer'
+import BreadCrumbs from '../../components/breadcrumbs'
 
 
  const data = [

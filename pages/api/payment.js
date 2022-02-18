@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const stripe = require('stripe')(process.env.STRIPE_KEY);
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const calculateOrderAmount = (total) => {
   // Replace this constant with a calculation of the order's amount
@@ -10,7 +10,7 @@ const calculateOrderAmount = (total) => {
 
 export default async function handler (req, res) {
   const { price } = req.body;
-
+  console.log(calculateOrderAmount(price))
   try {
     
     //Create a PaymentIntent with the order amount and currency
