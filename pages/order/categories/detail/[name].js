@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import styles from '../../../../styles/DetailsPage.module.css'
 import Nav from '../../../../components/navBar'
@@ -23,8 +24,7 @@ import burgerSand from '../../../../public/burger.png'
 import Image from 'next/image'
 import FloatingButton from '../../../../components/floatingButton'
 import { useDispatch } from 'react-redux'
-import { addToBag , increment  } from '../../../../redux/bagSlice'
-import { FaAngleLeft } from 'react-icons/fa'
+import { addToBag  } from '../../../../redux/bagSlice'
 import BreadCrumbs from '../../../../components/breadcrumbs'
 const items = [
     {
@@ -140,8 +140,6 @@ export default function Details(){
    
     
     const handleDispatch = (i)=>{
-        // const bag = useSelector(state => state.bag)
-        // const match = bag.items.find( item=>item.i.title === i.title && item.meat === meat)
         if(i.title==='Kabob Platter' || 
             i.title==='Shawarma Sandwich' || 
             i.title==='Kabob Sandwich' || 
@@ -150,11 +148,7 @@ export default function Details(){
             i.title==='Shawarma Platter'){
                 if(meat==='Choose One'){
                     alert('Choose your meat please')
-                }
-                // else if (match){ enable if wanted to not add the matched items, it will just update qty
-                //     dispatch(increment({i,meat}))
-                // }
-                else{
+                }else{
                     dispatch(addToBag({beverage,meat,i,qty:1}))
                 }
         }else{
@@ -164,6 +158,10 @@ export default function Details(){
     }
     return(
         <div>
+            <Head>
+                <title>Order Online</title>
+                <meta name="description" content="My Restaurant Place order page" />
+            </Head>
             <div className={styles.bg}>
                 <Nav/>
                 <h1 className={styles.title}>Place Your Order</h1>

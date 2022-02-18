@@ -1,4 +1,4 @@
-import { CardElement,useStripe,useElements,Elements } from '@stripe/react-stripe-js';
+import { CardElement,useStripe,useElements } from '@stripe/react-stripe-js';
 import {useEffect, useState} from 'react';
 
 
@@ -93,18 +93,8 @@ export default function Modal ({show,hide,total}){
                                         <input type="text" className="border w-full rounded rounded-md p-2 my-2" id="name" placeholder="Address"/>
                                         <input type="text" className="border w-full rounded rounded-md p-2 my-2" id="name" placeholder="City"/>
                                         <input type="text" className="border w-full rounded rounded-md p-2 my-2" id="name" placeholder="State"/>
-                                       {/* <div className="flex gap-2">
-                                            <input type="text" className="border flex-auto w-full rounded rounded-md p-2 my-2" id="name" placeholder="Card Number"/>
-                                            <input type="text" className="border flexauto w-20 rounded rounded-md p-2 my-2" id="name" placeholder="CVV"/>
-                                       </div> */}
                                        <div className='p-2 my-2 border rounded rounded-md'>
-                                       
                                             <CardElement onChange={handleChange} />
-                                      
-                                      
-
-                                      
-                                       
                                        </div>
                                      
                                        
@@ -150,13 +140,6 @@ export default function Modal ({show,hide,total}){
                                 >
                                     Close
                                 </button>
-                                {/* <button
-                                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                    type="button"
-                                    onClick={() => setShowModal(false)}
-                                >
-                                    Save Changes
-                                </button> */}
                                 </div>
                             </div>
                             </div>

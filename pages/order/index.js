@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styles from '../../styles/OrderPage.module.css'
 import hummus from '../../public/mezza.jpeg'
 import kabobo from '../../public/main.jpeg'
@@ -127,6 +128,10 @@ export default function OrderPage(){
 
     return(
         <div>
+            <Head>
+                <title>Order-Online</title>
+                <meta name="description" content="My Restaurant Order Online Page" />
+            </Head>
             <div className={styles.bg}>
                 <Nav/>
                 <h1 className={styles.title}>Place Your Order</h1>

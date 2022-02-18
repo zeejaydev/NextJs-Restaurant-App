@@ -10,7 +10,7 @@ const calculateOrderAmount = (total) => {
 
 export default async function handler (req, res) {
   const { price } = req.body;
-  console.log(calculateOrderAmount(price))
+ 
   try {
     
     //Create a PaymentIntent with the order amount and currency

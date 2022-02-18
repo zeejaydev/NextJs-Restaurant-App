@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Nav from "../components/navBar";
 import styles from '../styles/OrderPage.module.css'
 import { useSelector } from 'react-redux'
@@ -8,43 +9,36 @@ import { decrement   } from '../redux/bagSlice'
 import emptybag from '../public/empty-bag.png'
 import Link from "next/link";
 import Modal from "../components/modal";
-import { useState , useEffect } from "react";
+import { useState  } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from '@stripe/react-stripe-js';
 
+export async function getServerSideProps() {
+    // Get stripe Key from server
+    const stripeKey = process.env.STRIPE_KEY
+    // Pass data to the page via props
+    return { props: { stripeKey } }
+  }
 
- const stripePromise = loadStripe("pk_test_pLjuIrW2QxFzfBfXrtBZmHil00SnxKJpbM");
  
-export default function Checkout (){
+export default function Checkout ({stripeKey}){
+
+    const stripePromise = loadStripe(stripeKey);
     const bag = useSelector(state => state.bag)
     const dispatch = useDispatch()
     const [showModal, setShowModal] = useState(false)
-    // const [clientSecret, setClientSecret] = useState("");
    
     const hide = ()=>{
         setShowModal(false)
     }
     
-    // useEffect(() => {
-    //     // Create PaymentIntent as soon as the page loads
-    //     fetch("api/payment", {
-    //       method: "POST",
-    //       headers: { "Content-Type": "application/json" },
-    //       body: JSON.stringify({ price:  1400 }),
-    //     })
-    //       .then((res) => res.json())
-    //       .then((data) => setClientSecret(data.clientSecret));
-    //   }, []);
-    //   const appearance = {
-    //     theme: 'stripe',
-    //   };
-    //   const options = {
-    //     clientSecret,
-    //     appearance,
-    //   };
     return(
         
         <div>
+            <Head>
+                <title>Check out</title>
+                <meta name="description" content="My Restaurant Check out page" />
+            </Head>
             <Elements stripe={stripePromise}>
                 <Modal show = {showModal} hide={hide} total={bag.cartTotal}/>
             </Elements>

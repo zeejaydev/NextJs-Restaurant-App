@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styles from '../styles/Menu.module.css'
 import Image from 'next/image'
 import hummus from '../public/hummus.png'
@@ -114,6 +115,10 @@ export default function Menu(){
 
     return (
         <>
+        <Head>
+            <title>Restaurant Menu</title>
+            <meta name="description" content="My Restaurant Menu" />
+        </Head>
             <div className={styles.bg}>
                 
                 {/* Nav bar component */}

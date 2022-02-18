@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import styles from '../../../styles/OrderPage.module.css'
 import Nav from '../../../components/navBar'
 import Footer from '../../../components/footer'
@@ -157,6 +158,10 @@ export default function Categories(){
     if (!obj){
         return(
             <div>
+                <Head>
+                    <title>Order-Online</title>
+                    <meta name="description" content="My Restaurant Online Order" />
+                </Head>
                 <div>
                 <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24"></svg>
                 </div>
@@ -165,6 +170,10 @@ export default function Categories(){
     }
     return(
       <div>
+          <Head>
+                <title>Order-Online</title>
+                <meta name="description" content="My Restaurant Online Order" />
+            </Head>
             <div className={styles.bg}>
                 <Nav/>
                 <h1 className={styles.title}>Place Your Order</h1>

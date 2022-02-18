@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styles from '../styles/Location.module.css';
 import Footer from '../components/footer';
 import Nav from '../components/navBar'
@@ -6,6 +7,10 @@ import FloatingButton from '../components/floatingButton'
 export default function Location (){
     return(
        <div>
+            <Head>
+                <title>Restaurant Location</title>
+                <meta name="description" content="My Restaurant Location" />
+            </Head>
            <div className={styles.bg}>
                 <Nav />
                 <h1 className={styles.title}>VISIT US</h1>
